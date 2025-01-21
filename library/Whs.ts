@@ -26,10 +26,6 @@ export class Whs {
     }
 
     async get_route(whsRoute: string): Promise<unknown> {
-
-        console.log(whsRoute);
-        log_generic(this.headers);
-//        throw new Error("Stop!");
         
         const response: Response = await fetch(whsRoute, {
             headers: this.headers
